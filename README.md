@@ -1,6 +1,8 @@
 # Travel Journal
 
-A brief recollection of places that I have been brought to you by Scrimba, React, and Vite
+Solo project #2 under [Scrimba's](https://scrimba.com/learn/learnreact) Learn React Course
+
+This project demonstrates taking data from a data file and bringing that data into components through props.
 
 - Check out my [website](https://jkyochum.github.io) and say hey!
 
