@@ -1,3 +1,34 @@
-header{
+@import '_resets';
+
+body {
+    font-family: Inter, sans-serif;
+}
+
+header {
     background-color: #F55A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 550px;
+    height: 55px;
+    flex-shrink: 0;
+    margin: auto;
+
+    img {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+    }
+
+    h3 {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 14.461px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -1.085px;
+        margin-left: 7px;
+    }
 }
