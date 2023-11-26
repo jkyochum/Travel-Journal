@@ -40,6 +40,7 @@ header {
     .card {
         display: grid;
         grid-template-columns: 125px 1fr;
+        grid-template-rows: 30px 40px 25px 1fr;
         grid-template-areas:
             "card-image location"
             "card-image title"
