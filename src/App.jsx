@@ -16,11 +16,9 @@ function App() {
   return (
     <>
       <Header />
-      <main>
-        <section className="card-list">
-          {cards}
-        </section>
-      </main>
+      <section className="card-list">
+        {cards}
+      </section>
     </>
   )
 }
