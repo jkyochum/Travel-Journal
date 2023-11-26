@@ -3,7 +3,7 @@ export default function Card(props) {
         <div className="card">
             <img src={props.card.imageUrl} className="card-image" />
             <div className="location">
-                <img src="./src/assets/location-marker.svg" alt="location marker" />
+                <img src="./assets/location-marker.svg" alt="location marker" />
                 <h3>{props.card.location}</h3>
                 <p><a href={props.card.googleMapsUrl} target="_blank">View on Google Maps</a></p>
             </div>
