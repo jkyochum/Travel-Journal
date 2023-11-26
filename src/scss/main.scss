@@ -57,7 +57,7 @@ header {
             width: 125px;
             height: 168px;
             border-radius: 5px;
-            background-size: cover;
+            object-fit: cover;
             grid-area: card-image;
         }
 
