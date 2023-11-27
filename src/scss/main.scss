@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     max-width: 550px;
     height: 55px;
     margin: auto;
@@ -31,7 +31,7 @@ header {
 }
 
 .card-list {
-    width: 80%;
+    // width: 80%;
     max-width: 550px;
     margin: auto;
     padding: 40px 0;
@@ -40,7 +40,7 @@ header {
     .card {
         display: grid;
         grid-template-columns: 125px 1fr;
-        grid-template-rows: 30px 40px 25px 1fr;
+        grid-template-rows: 30px 40px 25px auto;
         grid-template-areas:
             "card-image location"
             "card-image title"
@@ -85,8 +85,8 @@ header {
 
             p {
                 display: flex;
-                align-items: center;
                 margin-left: 12px;
+                display: none;
 
                 a {
                     color: $gray-purple;
@@ -94,14 +94,28 @@ header {
                     font-weight: 400;
                     text-decoration-line: underline;
                 }
+
+                @media screen and (min-width: 425px) {
+                    display: flex;
+                    align-items: center;
+                }
             }
         }
 
         .card-title {
             color: $black-purple;
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 700;
             grid-area: title;
+            align-self: center;
+
+            @media screen and (min-width: 425px) {
+                align-self: self-start;
+            }
+
+            @media screen and (min-width: 768px) {
+                font-size: 25px;
+            }
         }
 
         .visit-dates {
@@ -115,7 +129,7 @@ header {
         }
 
         .description {
-            width: 326px;
+            // width: 326px;
             color: $black-purple;
             font-size: 10.24px;
             font-weight: 400;
